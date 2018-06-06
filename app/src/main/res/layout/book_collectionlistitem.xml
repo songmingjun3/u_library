@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#F0F8FF"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="7dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/ripple"
+        android:id="@+id/book_info">
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/bookcollection_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bookcollection_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:textSize="15sp"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/bookcollection_publishing_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:textSize="12sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/DeleteItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="删除"/>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
+
+

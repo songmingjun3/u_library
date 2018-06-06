@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context="com.lc.android.uestclibrary.SearchActivity">
+    <com.lc.android.uestclibrary.slidingmenupackage.slidingmenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mHorizontalScrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <include layout="@layout/slingding_menu"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/line"
+                        android:layout_below="@+id/library_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#6699FF"/>
+
+                    <TextView
+                        android:id="@+id/error_info"
+                        android:layout_below="@+id/linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageView
+                        android:id="@+id/library_title"
+                        android:src="@drawable/library_title"
+                        android:layout_height="80dp"
+                        android:layout_width="280dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageButton
+                        android:background="@drawable/arrow1"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/button_move_to_login"
+                        android:layout_below="@+id/line"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="showleftMenu"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_height="wrap_content"
+                        android:layout_width="300dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="40dp"
+                        android:layout_below="@+id/button_move_to_login"
+                        android:layout_alignStart="@+id/library_title"
+                        android:layout_alignLeft="@+id/library_title">
+
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="300dp"
+                            android:layout_below="@+id/radioGroup"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true">
+                            <RadioGroup
+                                android:id="@+id/radioGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/KeyWord"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="关键字"
+                                android:layout_weight="15.22" />
+
+                            <RadioButton
+                                android:id="@+id/Name"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="题名"
+                                android:layout_weight="15.22" />
+
+                            <RadioButton
+                                android:id="@+id/Author"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="著者"
+                                android:layout_weight="15.22" />
+
+                            <RadioButton
+                                android:id="@+id/Theme"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="主题"
+                                android:layout_weight="15.22" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/editText_bookName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Book Name"
+                        android:layout_weight="15.22"
+                        android:layout_below="@+id/error_info"
+                        android:layout_alignStart="@+id/linear"
+                        android:layout_toStartOf="@+id/query_button"
+                        android:layout_alignLeft="@+id/linear"
+                        android:layout_toLeftOf="@+id/query_button" />
+
+                    <ImageButton
+                        android:background="@drawable/search3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/query_button"
+                        android:layout_alignTop="@+id/editText_bookName"
+                        android:layout_alignEnd="@+id/library_title"
+                        android:layout_alignRight="@+id/library_title" />
+
+                    <!--<TextView-->
+                        <!--android:text="用户信息"-->
+                        <!--android:textSize="30dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/text_login"-->
+                        <!--android:layout_above="@+id/linear"-->
+                        <!--android:layout_toRightOf="@id/button_move_to_login"-->
+                        <!--android:onClick="showleftMenu"/>-->
+            </RelativeLayout>
+        </LinearLayout>
+    </com.lc.android.uestclibrary.slidingmenupackage.slidingmenu>
+
+
+</RelativeLayout>

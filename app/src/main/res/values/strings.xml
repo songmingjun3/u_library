@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">U-Library</string>
+    <string name="text1">图书馆</string>>
+    <string name="text2">索书号</string>>
+    <string name="text3">状态</string>>
+    <string name="text4">位置</string>>
+</resources>

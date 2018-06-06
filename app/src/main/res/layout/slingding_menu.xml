@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面的左滑菜单，显示用户名和登录信息以及相应的一些操作 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F0F8FF">
+
+
+
+            <!-- 左滑菜单的主界面 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="2dp">
+                <!-- 用户名和头像 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/move_to_login">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/login"
+                        />
+                    <TextView
+                        android:id="@+id/slingding_login"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:text="未登录"
+                        android:gravity="center_vertical"
+                        android:textSize="17sp"
+                        android:textStyle="italic|bold"
+                        />
+                </LinearLayout>
+                <!-- 空隙 -->
+
+                 <!-- 第一个Item -->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/slingding_readinginfo">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/dapin" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:text="借阅信息"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+                <!-- 空隙 -->
+
+                <!-- 第二个Item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/slingding_readinghistory">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+
+                        android:src="@drawable/qu"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+
+                        android:textSize="17sp"
+                        android:text="借阅历史"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <!-- 空隙 -->
+                <!-- 第三个Item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:onClick="gotoBookCollectionActivity"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+
+                        android:src="@drawable/start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+
+                        android:textSize="17sp"
+                        android:text="我的收藏"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <!-- 空隙 -->
+
+                <!-- 第四个Item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:id="@+id/QA">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/fly"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+
+                        android:textSize="17sp"
+                        android:text="留言板"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <!-- 第五个Item -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/quit_login"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:background="#00000000"/>
+
+                </LinearLayout>
+                <!-- 第六个Item
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                </LinearLayout>
+-->
+            </LinearLayout>
+    </LinearLayout>
